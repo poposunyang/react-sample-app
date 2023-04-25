@@ -1,8 +1,8 @@
-import type { ReportHandler } from 'web-vitals';
+import type { ReportHandler } from "web-vitals";
 
 const reportWebVitals = (onPerfEntry?: ReportHandler): void => {
-  if (typeof onPerfEntry !== 'undefined' && onPerfEntry instanceof Function) {
-    void import('web-vitals').then(
+  if (typeof onPerfEntry !== "undefined" && onPerfEntry instanceof Function) {
+    void import("web-vitals").then(
       ({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
         getCLS(onPerfEntry);
         getFID(onPerfEntry);
